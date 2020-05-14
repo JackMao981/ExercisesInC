@@ -1,14 +1,19 @@
-#include <stdio.h>
+/*
+cards.c is a program from Head First C
+Chapter 1, page 37
+
+*/
 #include <stdlib.h>
+#include <stdio.h>
 
 int main(){
   char card_name[3];
   int count = 0;
   while(card_name[0] != 'X'){
+    int val = 0;
     puts("Enter the card_name: ");
     scanf("%2s", card_name);
 
-    int val = 0;
 
     switch (card_name[0]) {
       case 'K':
